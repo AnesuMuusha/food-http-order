@@ -9,6 +9,12 @@
   color: aliceblue;
   font-size: 500%;
 }
+.MealsError{
+  text-align: center;
+  color: crimson;
+  font-size: 500%;
+
+}
 
 .meals ul {
   list-style: none;
