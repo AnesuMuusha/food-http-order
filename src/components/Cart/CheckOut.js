@@ -42,7 +42,7 @@ eneteredStreetIsVAlid &&
 eneteredCityIsVAlid &&
 eneteredPostalCodeIsVAlid;
 
-if (!formIsValid){
+if (formIsValid){
     return;
 }
     props.onConfirm({
