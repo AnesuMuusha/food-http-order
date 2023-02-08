@@ -45,7 +45,12 @@ eneteredPostalCodeIsVAlid;
 if (!formIsValid){
     return;
 }
-//submit card
+    props.onConfirm({
+        name:eneteredName,
+        street:eneteredStreet,
+        city:eneteredCity,
+        postalCode:eneteredPostalCode
+    });
 };
 const nameControlClasses=`${classes.control} ${formInputsValidity.name ?'': classes.invalid}`;
 const streetControlClasses=`${classes.control} ${formInputsValidity.street ?'': classes.invalid}`;
