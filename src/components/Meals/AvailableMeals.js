@@ -1,5 +1,5 @@
 import Card from '../UI/Card';
-import MealItem from './MealItem/MealItem';
+import MealItem from './MealItem/MealItem.tsx';
 import classes from './AvailableMeals.module.css';
 import { useEffect , useState} from 'react';
 
