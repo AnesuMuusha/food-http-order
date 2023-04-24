@@ -1,9 +1,10 @@
 import React from 'react';
-import './MealsSummaryOne.module.css';
+import './MealsSummaryOne.css';
 
 const MealsSummary = () => {
   return (
-    <section className='summary'>
+    
+    <section className='summaryy'>
       <h2>Delicious Food, Delivered To You</h2>
       <p>
         Choose your favorite meal from our broad selection of available meals
@@ -14,7 +15,8 @@ const MealsSummary = () => {
         of course by experienced chefs!
       </p>
     </section>
-  );
+    
+    );
 };
 
 export default MealsSummary;
