@@ -53,7 +53,7 @@ if(httpError){
 };
 
   const mealsList = meals.map((meal) => (
-    
+   <div className='border'> 
     <MealItem
       key={meal.id}
       id={meal.id}
@@ -61,7 +61,7 @@ if(httpError){
       description={meal.description}
       price={meal.price}
     />
-    
+    </div>
   ));
   console.log(meals);
   return (

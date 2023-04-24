@@ -1,7 +1,7 @@
 import { FormEvent, RefObject, useRef, useState } from 'react';
 import React from 'react';
 import Input from '../../UI/Input.tsx';
-import './MealItemForm.module.css';
+import './MealItemForm.css';
 
 interface MealItemFormProps {
   onAddToCart: (amount: number) => void;
@@ -30,7 +30,9 @@ const MealItemForm= (props:MealItemFormProps) => {
   };
 
   return (
-    <form className='form' onSubmit={submitHandler}>
+    <div>
+    <form className='formOne' onSubmit={submitHandler}>
+     <div>
       <Input
         ref={amountInputRef as RefObject<HTMLInputElement>}
         label='Amount'
@@ -43,9 +45,14 @@ const MealItemForm= (props:MealItemFormProps) => {
           defaultValue: '1',
         }}
       />
-      <button>+ Add</button>
+      </div>
+      <div>
+        <button>+ Add</button>
       {!amountIsValid && <p>Please enter a valid amount (1-5).</p>}
+      </div>
     </form>
+  
+      </div>
   );
 };
 
